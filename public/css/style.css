@@ -1,0 +1,86 @@
+body {
+  background-color: #333333;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../assets/green_rain.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 20px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+
+  border: 1px solid rgb(0, 225, 255);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgb(0, 225, 255);
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+
+.center {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.title {
+  color: white;
+  font-family: 'Rubik Glitch', cursive;
+  font-size: 24px;
+  place-self: center;
+  margin-top: -12px;
+  z-index: 2;
+}
+
+.title::before {
+  content: '';
+  position: absolute;
+  place-self: center;
+  background-color: white;
+  width: 400px;
+  height: 5px;
+  z-index: -1;
+  border-radius: 50%;
+  top: calc(50% - 10px);
+  left: calc(50% - 200px);
+  margin: 0 auto;
+
+  box-shadow: 0 0 10px 5px #00FF41;
+}
+
+/* .title::after {
+
+  content: "あなたはあなたが見るものを選ぶ";
+  font-family: 'Noto Sans JP';
+  display: block;
+  font-size: 15px;
+  margin-top: 10px;
+  color: red;
+  
+} */
+
+.content {
+  width: 95vw;
+  height: 90vh;
+  background-color: black;
+  border: 1px solid #00FF41;
+  display: grid;
+}
